@@ -1,9 +1,8 @@
 import React from 'react';
 import style from './style.css';
-
-import { TodoModel } from 'app/models';
 import classNames from 'classnames';
- 
+import { TodoModel } from 'app/models';
+
 export const FILTER_TITLES = {
   [TodoModel.Filter.SHOW_ALL]: 'All',
   [TodoModel.Filter.SHOW_ACTIVE]: 'Active',
