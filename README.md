@@ -1,4 +1,4 @@
-# Frontend Boilerplate with React, Redux , TypeScript , Webpack, Babel, Ant Design & many more
+# Frontend Boilerplate with React, Redux , TypeScript , Webpack, Babel, Ant Design & many more with the integration of Github Pages
 
 A bare minimum react-hooks-redux-webpack-typescript boilerplate with TodoMVC example.
 
@@ -6,6 +6,8 @@ Note that this project does not include **Server-Side Rendering**, **Static code
 If needed, please fork this repository and add your own that meets your requirements.
 
 Ideal for creating React apps from the scratch.
+
+Check Online : https://meanupsarkar.github.io/ReactReduxTsTemplate/
 
 ## Contains
 
@@ -48,7 +50,7 @@ $ npm start
 $ npm run build
 ```
 
-## Deploy (to the [GitHub Pages](https://pages.github.com/))
+## Deploy (to the [GitHub Pages](https://meanupsarkar.github.io/ReactReduxTsTemplate/))
 
 ```
 $ npm run deploy
