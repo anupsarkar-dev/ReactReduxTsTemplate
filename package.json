@@ -1,9 +1,10 @@
 {
-  "name": "react-hooks-redux-typescript-boilerplate",
-  "version": "1.1.1",
+  "name": "ReactReduxTsTemplate",
+  "homepage": "https://meanupsarkar.github.io/react-redux-typescript-boilerplate",
+  "version": "2.0.0",
   "private": true,
   "description": "A frontend boilerplate with React hooks, Redux and Typescript",
-  "homepage": "https://rokoroku.github.io/react-redux-typescript-boilerplate",
+
   "keywords": [
     "react",
     "hooks",

@@ -1,4 +1,4 @@
-# Frontend Boilerplate with React, Redux & TypeScript
+# Frontend Boilerplate with React, Redux , TypeScript , Webpack, Babel, Ant Design & many more
 
 A bare minimum react-hooks-redux-webpack-typescript boilerplate with TodoMVC example.
 
