@@ -12,6 +12,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+
+const { getThemeVariables } = require('antd/dist/theme');
+
+
 module.exports = {
   mode: isProduction ? "production" : "development",
   context: sourcePath,
@@ -85,6 +89,28 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.less$/,
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader', // translates CSS into CommonJS
+        }, {
+          loader: 'less-loader', // compiles Less to CSS
+         options: {
+           lessOptions: { // If you are using less-loader@5 please spread the lessOptions to options directly
+             modifyVars:  
+                      getThemeVariables(
+                        {
+                        //  dark: false, // Enable dark mode
+                        //  compact: true, // Enable compact mode
+                       }),
+             javascriptEnabled: true,
+           },
+         },
+        }],
+        // ...other rules
       },
       // static assets
       { test: /\.html$/, use: 'html-loader'},
